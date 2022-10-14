@@ -1,4 +1,5 @@
 import React from "react";
+import { faker } from "@faker-js/faker";
 
 function CommentDetail() {
   return (
@@ -6,7 +7,7 @@ function CommentDetail() {
       <div class="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-lg bg-white shadow-lg">
         <div class="relative flex gap-4">
           <img
-            src="https://icons.iconarchive.com/icons/diversity-avatars/avatars/256/charlie-chaplin-icon.png"
+            src={faker.image.avatar()}
             class="relative rounded-lg -top-8 -mb-4 bg-white border h-20 w-20"
             alt=""
             loading="lazy"
